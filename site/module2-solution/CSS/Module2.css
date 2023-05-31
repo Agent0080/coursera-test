@@ -8,24 +8,27 @@ h1 {
   text-align: center;
 }
 
-div {
-  border: 2px solid black;
-  background-color: #686b7a;
-  width: auto;
-  height: auto;
-}
-
 p {
-  font-family: 'Times New Roman', Times, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgb(231, 215, 202);
 }
 
-.title{
-  ;
+.box {
+  border: 1px solid black;
+  background-color: #686b7a;
+  width: 20px;
+  height: 10px;
 }
+
+.title{
+  float: top-right;
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
 #blue {
   background-color: rgb(34, 220, 245);
-  color: beige;
+  color: black;
 }
 
 #brown {
