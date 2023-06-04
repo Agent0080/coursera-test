@@ -1,133 +1,86 @@
-/********** Base styles **********/
+/********** Base HTML style **********/
 * {
   box-sizing: border-box;
 }
 
+/********** Header ************/
 h1 {
   margin: 30px;
   text-align: center;
 }
 
-div#container {
-  background-color: grey;
-  border: solid 2px;
-  margin: 5px;
-}
 
-section {
-  float: right;
-  width: 200px;
-  height: 50px;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(231, 215, 202);
-  padding: 10px;
-}
-
-#blue {
-  background-color: rgb(34, 220, 245);
-  color: black;
-}
-
-#brown {
-  background-color: rgb(153, 72, 24);
-  color: beige;
-}
-
-#black {
-  background-color: rgb(0, 0, 0);
-  color: beige;
-}
-
-/* Simple Responsive Framework. */
+/********** Simple Responsive Framework. ***********/
 .row {
   width: 100%;
 }
 
-/********** Large devices only **********/
+/* Large devices only */
 @media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
   .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
-}
-
-/********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
+    width: 33%;
   }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
+ }
+
+/* Medium devices only */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
   }
   .col-md-6 {
     width: 50%;
   }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
   .col-md-12 {
     width: 100%;
   }
+}
+
+/********** Sets Outer DIV Bonderies **********/
+div#container {
+  padding: 10px;
+}
+
+/********** Sets Content DIV Bonderies and Styling **********/
+div#content {
+  background-color: grey;
+  border: solid 1px black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(231, 215, 202);
+}
+
+/********** Content Title Section Styling **********/
+p.title {
+  float: right;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  padding: 5px;
+  margin: 0px;
+}
+
+#p1 {
+  background-color: rgb(233, 227, 175);
+  color: black;
+}
+
+#p2 {
+  background-color: rgb(153, 72, 24);
+  color: beige;
+}
+
+#p3 {
+  background-color: rgb(0, 0, 0);
+  color: beige;
+}
+
+/********** Content Text Styling **********/
+p.body {
+  padding: 10px;
+  margin: 0px;
+  clear: right;
 }
